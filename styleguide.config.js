@@ -16,9 +16,6 @@ module.exports = {
     "**/*.d.ts"
   ],
   components: ["src/**/[A-Z]*.js"],
-  styleguideComponents: {
-    Wrapper: path.join(__dirname, "src/styleguidist/Wrapper")
-  },
   styleguideDir: "build-docs",
   template: {
     head: {

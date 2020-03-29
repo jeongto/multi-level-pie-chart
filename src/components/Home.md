@@ -1,5 +1,0 @@
-example:
-
-```js
-;<Home />
-```
