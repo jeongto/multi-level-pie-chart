@@ -1,9 +1,10 @@
 name: github pages
 
-on:
-  push:
-    tags:
-      - v*
+on: push
+# on:
+#   push:
+#     tags:
+#       - v*
 
 jobs:
   build-deploy:
@@ -14,12 +15,11 @@ jobs:
         with:
           node-version: 12.x
       - run: npm ci
-      - run: npm run build
-      # - run: echo "example.com" > ./build/CNAME
+      - run: npx styleguidist build
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./build-docs
           publish_branch: gh-pages
           force_orphan: true
