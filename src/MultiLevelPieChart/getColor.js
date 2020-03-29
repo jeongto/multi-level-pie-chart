@@ -1,6 +1,10 @@
 const colors = [
+  "DarkGreen",
+  "Green",
+  "ForestGreen",
+  "MediumSeaGreen",
+  //
   "Crimson",
-  // "OrangeRed",
   "DarkOrange",
   "ForestGreen",
   "Blue",

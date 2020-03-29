@@ -14,7 +14,7 @@ function multiLevelDataToChartData(data) {
   for (let i = 0; i < maxDepth; i += 1) {
     const labelSets = data.map(v => (v[i] ? v[i] : [undefined]))
     const backgroundColor = labelSets
-      .map((labels, index) => labels.map(() => getColor(index)))
+      .map((labels, index) => labels.map(() => getColor(i)))
       .flat()
     const dataset = {
       labels: labelSets.flat(),
