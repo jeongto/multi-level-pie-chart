@@ -8,8 +8,11 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "chart.js": "^2.9.3",
+    "chartjs-plugin-labels": "^1.1.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
+    "react-chartjs-2": "^2.9.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
@@ -23,6 +26,7 @@
     "eslint-plugin-markdown": "^1.0.2",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-promise": "^4.2.1",
+    "jest-canvas-mock": "^2.2.0",
     "prettier": "^1.19.1",
     "react-styleguidist": "^10.6.2"
   },
